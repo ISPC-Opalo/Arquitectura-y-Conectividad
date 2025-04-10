@@ -1,36 +1,37 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/sN4by2UL)
-![Logo de la Institución ISPC](assets/caratula.png)
+![Logo de la Institución ISPC](E%20assets/caratula.png)
 
-# Electronica Microcontrolada
 
-## Proyecto de la Unidad #1: Implementación de Alarmas
+# Arquitectura y Conectividad.
 
-Semana 1: Alarmas con circuitos básicos eléctricos.
-Presentacion del primer proyecto grupal correspondiente a la materia de Electroinca microcontrolada, bajo las siguiente consignas:
-1. Estudio de los componentes básicos de un circuito eléctrico.
-2. Diseño y construcción de un circuito simple de alarma utilizando un
-interruptor, una batería y un buzzer.
-3. Documentación del diseño en el repositorio del equipo en GitHub.
+##  1. Arquitectura y Conectividad
+Descripción sintética:
+Esta materia aborda los fundamentos técnicos de las redes IoT: protocolos de comunicación, diseño de arquitecturas de red, enrutamiento, conectividad inalámbrica y modelos de referencia. Los estudiantes trabajan sobre la implementación de redes eficientes y escalables para transmitir datos desde sensores a la nube.
+Temas desarrollados en el módulo:
 
-Semana 2-3:Incorporación de circuitos electrónicos
-analógicos (OPA).
-1. Introducción a los amplificadores operacionales y su funcionamiento.
-2. Implementación de un circuito de alarma que reaccione a cambios de
-luz o temperatura usando OPA.
-3. Pruebas y ajustes del circuito. Documentación del proceso.
+Protocolos de comunicación (MQTT, HTTP, CoAP).
+
+Diseño de arquitectura de red IoT.
+
+Comunicaciones inalámbricas (ZigBee, LoRa, Bluetooth).
+
+Enrutamiento básico y comunicaciones WAN.
+
+JSON y REST como lenguajes de transporte de datos.
+
+----------------------
 
 ### Profesor
-- Cristian Gonzalo Vera | https://github.com/Gona79
+- Ing. Morales Jorge Elias | https://github.com/JorEl057
 
 ### Miembros:
-- Luciano Lujan | GitHub: https://github.com/lucianoilujan
-- Joaquin Garzón | GitHub: https://github.com/Joacogarzonn
 - Durigutti, Vittorio | GitHub: https://github.com/vittoriodurigutti
-- Joaquin Zalazar | GitHub: https://github.com/breaakerr
-- Lisandro Juncos | GitHub: https://github.com/Lisandro-05
-- Nahuel Velez | GitHub: https://github.com/ISPC-TST-PI-I-2024/ISPC_PI_Lucas_Nahuel_Velez 
-- Jose Marquez | GitHub: https://github.com/ISPC-TST-PI-I-2024/josemarquez.git
-- Tomas Repossi | GitHub:  https://github.com/TomasRepossi
+- Zalazar, Joaquín | GitHub: https://github.com/breaakerr
+- Marquez, José | Github: https://github.com/marquezjose
+- Lujan, Luciano | Github: https://github.com/lucianoilujan
+- Velez, Nahuel | Github: https://github.com/Lucasmurua19
+- Juncos, Lisandro | Github: https://github.com/Lisandro-05
+- Garzón, Joaquín | Github: https://github.com/Joacogarzonn
 
 ### Índice
 
@@ -40,7 +41,7 @@ luz o temperatura usando OPA.
 - **B investigacion**: Investigaciones realizadas por los estudiantes.
 - **C prototipo**: Implementaciones específicas de la capa de almacenamiento.
 - **D presentacion**: Incluye grabaciones y bitácoras de las reuniones de Scrum, así como las presentaciones de progreso.
-- **zassets**: Contiene recursos gráficos como imágenes y otros archivos necesarios para la documentación.
+- **E assets**: Contiene recursos gráficos como imágenes y otros archivos necesarios para la documentación.
 
 ## Stack Tecnológico Común
 
@@ -54,18 +55,7 @@ luz o temperatura usando OPA.
 - IDE: **Visual Studio Code**
 - Simulador: **Proteus Profesional 8.17**
 
-### Sprint Actual (#2): 
-- Estudiar el funcionamiento y aplicaciones de los amplificadores
-operacionales.
-- Seleccionar un OPA adecuado para el proyecto de alarma.
-- Diseñar un circuito de alarma mejorado que incluya un OPA.
-- Simular el nuevo diseño en Proteus.
-- Realizar el montaje del circuito en una protoboard.
-- Ajustar el circuito basándose en los resultados de la simulación y las
-pruebas físicas.
-- Documentar los cambios y las mejoras realizadas.
-- Presentar el proyecto mejorado al grupo, discutiendo los desafíos
-encontrados.
+
 ----------------------
 ## Licencia
 
