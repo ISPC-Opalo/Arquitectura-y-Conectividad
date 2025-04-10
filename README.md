@@ -32,6 +32,7 @@ JSON y REST como lenguajes de transporte de datos.
 - Velez, Nahuel | Github: https://github.com/Lucasmurua19
 - Juncos, Lisandro | Github: https://github.com/Lisandro-05
 - Garzón, Joaquín | Github: https://github.com/Joacogarzonn
+- Guzmán, Maria |Github: https://github.com/lilenguzman01
 
 ### Índice
 
