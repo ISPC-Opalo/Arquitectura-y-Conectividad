@@ -1,4 +1,4 @@
-![Logo de la Institución ISPC](E%20assets/caratula.png)
+![Logo de la Institución ISPC](../E%20assets/caratula.png)
 ----------------------
 
 ### Profesor
