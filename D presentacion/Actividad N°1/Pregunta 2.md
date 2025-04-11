@@ -1,4 +1,4 @@
-![Carátula](./E%20assets/caratula.png)
+![Carátula](../../E%20assets/caratula.png)
 
 # TECNICATURA SUPERIOR EN TELECOMUNICACIONES
 
@@ -15,9 +15,8 @@ Los dispositivos IoT se conectan utilizando distintos tipos de redes, tanto inal
 
 - **Wi-Fi**: Muy común en entornos domésticos y comerciales, ofrece alta velocidad pero con consumo energético elevado. Opera en las bandas de frecuencia de 2,4 GHz y 5 GHz, y la más reciente, la banda de 6 GHz.
 - **Bluetooth**: Ideal para comunicaciones de corto alcance y bajo consumo, usado en dispositivos personales y wearables.
-- **Zigbee**: Protocolo inalámbrico de bajo consumo y baja tasa de transferencia de datos, usado en domótica y sensores.
-- **Z-Wave**: Similar a Zigbee, utilizado principalmente en automatización del hogar.
-- **LoRa**: Representa la capa física de la red que dicta las frecuencias de trabajo con las que se obtienen largas distancias y muy bajo consumo, ideal para zonas rurales o aplicaciones de monitoreo ambiental.
+- **Z-Wave**: Tecnología inalámbrica propietaria de corto alcance y bajo consumo, orientada a la automatización del hogar. Utiliza su propio protocolo de comunicación y opera en bandas sub-GHz, ideal para redes malladas (mesh) de sensores y actuadores.
+- **LoRaWAN**: Excelente para comunicaciones de largo alcance y bajo consumo, ideal para zonas rurales o aplicaciones de monitoreo ambiental.
 - **Sigfox**: Es una red de IoT pensada para tener un bajo consumo y ser independiente de los despliegues de telefonía, usada en sensores remotos donde se transmiten pocos datos.
 
 #### Redes celulares
@@ -41,7 +40,6 @@ Además de las tecnologías de conectividad, los dispositivos IoT emplean divers
 - **AMQP (Advanced Message Queuing Protocol)**: Protocolo confiable y orientado a mensajes, útil en aplicaciones críticas que requieren entrega garantizada.
 - **HTTP/HTTPS**: Utilizado en dispositivos que requieren comunicación con servidores web, aunque con mayor carga de datos.
 - **LoRaWAN**: Es un protocolo de red que usa la tecnología LoRa, para redes de baja potencia y área amplia, LPWAN (Low Power Wide Area Network) empleado para comunicar y administrar dispositivos LoRa. El protocolo LoRaWAN se compone de gateways y nodos.
-- **NB-IoT y LTE-M**: Protocolos celulares diseñados para comunicación eficiente, segura y de gran cobertura.
 - **Bluetooth Low Energy (BLE)**: Protocolo optimizado para dispositivos con batería, como relojes inteligentes o sensores de salud.
 - **Zigbee y Z-Wave**: Muy usados en domótica, permiten la creación de redes de dispositivos interconectados.
 
@@ -64,7 +62,7 @@ Los dispositivos IoT pueden comunicarse siguiendo distintos modelos:
 - **Dispositivo a Dispositivo**: Comunicación directa entre dispositivos sin intermediarios, usando protocolos como Bluetooth o Zigbee.
 - **Dispositivo a Nube (Device-to-Cloud)**: Los dispositivos envían datos directamente a servicios en la nube para su procesamiento y almacenamiento, común en aplicaciones de monitoreo remoto.
 - **Dispositivo a Puerta de Enlace (Gateway)**: Los dispositivos se conectan a través de una puerta de enlace que facilita la comunicación con la nube o con otros dispositivos.
-- **Intercambio de Datos a través del Back-End**: Permite que los datos recopilados por los dispositivos sean analizados y combinados con otras fuentes de información en la nube, enriqueciendo la toma de decisiones.
+- **Intercambio de Datos entre Nubes**: Los usuarios pueden exportar y analizar datos de objetos inteligentes desde un servicio en la nube, en combinación con datos de otras fuentes, y enviarlos a otros servicios para su agregación y análisis.
 
 
 ### Esquema de comunicación en IoT
