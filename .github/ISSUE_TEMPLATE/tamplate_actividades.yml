@@ -1,0 +1,29 @@
+name: 📄 Cuestionario
+description: Crear un issue para documentar una pregunta del cuestionario
+title: "Cuestionario - [N] | Pregunta [N]"
+labels: [cuestionario, por revisar]
+body:
+  - type: input
+    id: responsable
+    attributes:
+      label: Responsable
+      description: GitHub username del responsable de este punto
+      placeholder: ej. @juanperez
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Objetivo  
+        Realizar el punto 2 correspondiente al cuestionario [N].  
+        Documentar en un archivo `Pregunta[N].md` ubicado en el directorio:  
+        `/D presentacion/Actividad N°1/`
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Crear archivo `Pregunta[N].md`
+        - label: De utilizar imágenes, registrar en `/E assets/Cuestionario N°1/` con el formato `P[N]img[n]` (Ejemplo: `P1img2.png`)
