@@ -1,4 +1,4 @@
-![Carátula](./E%20assets/caratula.png)
+![Carátula](../../E%20assets/caratula.png)
 
 # TECNICATURA SUPERIOR EN TELECOMUNICACIONES
 
