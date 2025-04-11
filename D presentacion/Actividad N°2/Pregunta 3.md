@@ -2,7 +2,7 @@
 
 La técnica de frecuencia modulada (FM) es una técnica de modulación que permite transmitir información a través de una onda portadora, variando su frecuencia en función de la señal de información que se desea transmitir, puede ser una señal de audio, video, datos o cualquier otra forma de información. La señal portadora es una señal sinusoidal de alta frecuencia que se utiliza como "vehículo" para transportar la información.
 
-<img src="../../E assets/Cuestionario N2/p3img1.png" />
+<img src="../../E assets/Cuestionario N2/p3img1.jpg" />
 
 La técnica de FM es ampliamente utilizada en sistemas IoT para transmitir información a través de una señal de radio, debido a su capacidad para transmitir información de manera confiable y con una alta calidad de señal. Esto se debe a que la FM utiliza una banda de frecuencia más estrecha y, por lo tanto, puede eliminar la mayoría de las interferencias y ruido no deseados. Además consume menos energía que otras técnicas de modulación , lo que significa que los dispositivos de IoT pueden funcionar durante períodos más largos con una batería más pequeña.
 Para utilizar FM en sistemas IoT, se necesita un emisor de FM, que modula la señal portadora con la información que se desea transmitir, y un receptor de FM, que demodula la señal recibida para recuperar la información original. 
