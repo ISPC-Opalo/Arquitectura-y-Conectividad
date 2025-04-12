@@ -1,3 +1,5 @@
+![Carátula](../../E%20assets/caratula.png)
+
 # ¿Qué es el Protocolo HTTPS?  
 
 
