@@ -1,6 +1,8 @@
 ![Carátula](../../E%20assets/caratula.png)
 
-# ¿Qué es la comunicación de datos en paralelo?  
+# TECNICATURA SUPERIOR EN TELECOMUNICACIONES  
+
+## ¿Qué es la comunicación de datos en paralelo?  
 ##  Describa su funcionamiento.
 
 ### ¿Qué es la comunicación de datos en paralelo?
