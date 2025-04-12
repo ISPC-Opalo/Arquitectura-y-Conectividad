@@ -1,6 +1,8 @@
 ![Carátula](../../E%20assets/caratula.png)
 
-# ¿Qué es el Protocolo HTTPS?  
+# TECNICATURA SUPERIOR EN TELECOMUNICACIONES
+
+## ¿Qué es el Protocolo HTTPS?  
 
 
 **HTTPS** (HyperText Transfer Protocol Secure) es la **versión segura de HTTP**, el protocolo que utilizan los navegadores y servidores web para comunicarse. La “S” al final significa **“Secure”**, e indica que la comunicación entre el cliente (normalmente un navegador) y el servidor está **cifrada** usando **TLS (Transport Layer Security)** o su predecesor SSL.
