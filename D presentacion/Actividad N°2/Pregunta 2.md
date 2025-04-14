@@ -6,6 +6,8 @@ La **modulación en amplitud (AM)** es una técnica de modulación analógica en
 
 Es una de las técnicas más antiguas y simples, utilizada históricamente en radiodifusión AM y todavía vigente en aplicaciones específicas de bajo costo.
 
+![alt text](<amplitud modulada.png>)
+
 ---
 
 ### Aplicación de AM en IoT
@@ -21,6 +23,7 @@ Aunque no es la técnica más usada en IoT moderno, la AM puede aplicarse en sit
 
 
 ---
+
 
 ### Ejemplo de uso
 
@@ -47,6 +50,3 @@ Este sistema puede ser útil en **aplicaciones de agricultura inteligente** sin 
 
 ---
 
-### Conclusión
-
-Aunque **AM no es común en IoT comercial**, puede utilizarse en **proyectos educativos, prototipos simples** o contextos donde la simplicidad sea más importante que la robustez o eficiencia. También es clave para **entender los fundamentos** de otras técnicas de modulación más avanzadas.
