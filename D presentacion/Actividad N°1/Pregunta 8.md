@@ -12,7 +12,9 @@ La comunicación paralela se caracteriza por transmitir múltiples bits simultá
 ### **Descripción:**
 
 Fue uno de los primeros estándares de comunicación paralela, diseñado en los años 70 por la empresa Centronics para impresoras.
-![alt text](<inrterfaz centronics.png>)
+
+![inrterfaz centronics](https://github.com/user-attachments/assets/23e4b072-eec4-4437-ba30-192c83fc5895)
+
 
 Utiliza un conector DB-25 en la computadora y un conector de 36 pines en la impresora.
 
@@ -41,4 +43,9 @@ Acompañado de señales de control como STROBE, ACK, BUSY, ERROR y SELECT.
 ->Conexión de impresoras paralelas (impresoras matriciales, láser antiguas).
 
 ->Fue reemplazado por USB y otras tecnologías más modernas.
+
+![image](https://github.com/user-attachments/assets/b4619a2b-abed-4941-90b5-c9bfbf68e799)
+
+
+
 
