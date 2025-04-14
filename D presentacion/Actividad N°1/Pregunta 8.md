@@ -1,5 +1,10 @@
+![caratula](https://github.com/user-attachments/assets/57ae061e-a212-41d8-8837-7e5b6f284110)
+
+
 # *8) ¿Cuáles son los protocolos paralelos más usados? Nombra alguno y descríbelo.*
 La comunicación paralela se caracteriza por transmitir múltiples bits simultáneamente, cada uno por una línea de datos diferente. Esto permite una alta velocidad de transferencia, pero con el costo de mayor complejidad y necesidad de sincronización precisa.
+
+![protocolos paralelos destacados](https://github.com/user-attachments/assets/d1a3309f-f435-4e5e-9cb9-b556fe305666)
 
 
 
