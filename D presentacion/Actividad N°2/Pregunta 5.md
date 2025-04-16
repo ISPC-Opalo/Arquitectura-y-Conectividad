@@ -11,10 +11,10 @@ La modulación ASK, se basa en representar variaciones de amplitud inmersos en u
 
 ### Ejemplo de modulación de ASK:
 
-El circuito consta de un interruptor el cual dependiendo de la información de la señal a modular (“1” y “0”) elige la portadora correspondiente para ese valor.
 
 ### Esquema de modulador ASK:
 
+El circuito consta de un interruptor el cual dependiendo de la información de la señal a modular (“1” y “0”) elige la portadora correspondiente para ese valor.
 
 ## Modulacion de Desplazamiento de Frecuencia (FSK)
 
