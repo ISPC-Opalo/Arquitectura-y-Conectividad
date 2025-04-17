@@ -15,7 +15,11 @@ ________________________
      width="300"
      style="margin-left: 20px; margin-top: 15px;" />
 
+El codigo y estructura en directorio: **C prototipo\Actividad N°3\Medidor Temperatura - Simulacion Wokwi**
+
 - **Dispositivo Alarma**. ESP32 fisico con 3 leds. Este emularia un sistema de alarmas regular ante una variacion. El led numero 1, encendera durante 1 segundo, cada vez que el dispositivo reciba una lectura correspondiente al topic tempESP. Cuando dicho valor rompa el umbral establecido de 45°C - encendera el led numero 2 por 3 segundos. En un sistema real, podemos equipararlo a una alarma de bajo nivel o advertencia. Y cuado el valor recibido corresponda a +65°C encendera led 3, en lugar de led 2. Ahora ademas enviando un mensaje de alerta al dispositivo movil. Como quisieramos que este mensaje llegue obligatoriamente, lo enviamos con una calidad QoS 2 al topic AlertaAltaTemperatura.
+
+El codigo y estrcutura en e directorio: **C prototipo\Actividad N°3\Alarma Temperatura**
 
 <img src="../../E assets/Cuestionario N3/P5Img2.png" alt="ESP32-fisico"
      width="300"
@@ -26,3 +30,7 @@ ________________________
 <img src="../../E assets/Cuestionario N3/P5Img3.png" alt="App-Movil"
      width="300"
      style="margin-left: 20px; margin-top: 15px;" />
+
+<img src="../../E assets/Cuestionario N3/P5Img4.png" alt="App-Movil"
+     width="300"
+     style="margin-left: 20px; margin-top: 15px;" />     
