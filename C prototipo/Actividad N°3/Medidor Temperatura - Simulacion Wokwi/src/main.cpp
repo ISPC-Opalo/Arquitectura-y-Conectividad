@@ -12,7 +12,7 @@ PubSubClient client(espClient);
 // Pines
 const int PIN_SENSOR = 34; 
 
-// WiFi
+// coneccion simulada a WiFi, de wokwi
 void setup_wifi() {
   WiFi.begin("Wokwi-GUEST", "", 6);
   while (WiFi.status() != WL_CONNECTED) {
@@ -52,6 +52,8 @@ void reconnect() {
 
 unsigned long lastSend = 0;
 
+
+// Inicia consola, wifi, server mqtt (mosquito), y canal para recibir mensajes
 void setup() {
   Serial.begin(115200);
   setup_wifi();
@@ -59,6 +61,7 @@ void setup() {
   client.setCallback(callback);
 }
 
+// Verifica conexion, y prueba reconexion si no conectado, envia valor sensor, 
 void loop() {
   if (!client.connected()) {
     reconnect();
@@ -68,7 +71,7 @@ void loop() {
   // Enviar cada 5 segundos
   if (millis() - lastSend > 5000) {
     int raw = analogRead(PIN_SENSOR); // Valor analógico 0-4095
-    float tempC = (raw / 4095.0) * 100.0; // Escalamos a 0-100°C
+    float tempC = (raw / 4095.0) * 100.0; // Escalamos a 0-100 en °C
 
     char msg[10];
     dtostrf(tempC, 4, 2, msg);  // Convertir a string
@@ -76,7 +79,7 @@ void loop() {
     Serial.print("Temperatura en dispositivo en C°: ");
     Serial.println(msg);
 
-    client.publish("tempESP", msg); // QoS 0 por defecto
+    client.publish("tempESP", msg); // QoS 0 por defecto. No hace falta mencianarla activamente
 
     lastSend = millis();
   }
