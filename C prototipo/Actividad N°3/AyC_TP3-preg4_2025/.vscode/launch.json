@@ -12,9 +12,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "c:/Users/EliteBook/Documents/PlatformIO/Projects/AyC_TP3_2025/.pio/build/esp32dev/firmware.elf",
+            "executable": "C:/Users/Vitto Dell/OneDrive/Escritorio/Proyectos/01_ISPC 2025/02_Arquitectura y Conectividad/Arquitectura-y-Conectividad/C prototipo/Actividad N°3/AyC_TP3-preg4_2025/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/EliteBook/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/Vitto Dell/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -25,18 +25,18 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "c:/Users/EliteBook/Documents/PlatformIO/Projects/AyC_TP3_2025/.pio/build/esp32dev/firmware.elf",
+            "executable": "C:/Users/Vitto Dell/OneDrive/Escritorio/Proyectos/01_ISPC 2025/02_Arquitectura y Conectividad/Arquitectura-y-Conectividad/C prototipo/Actividad N°3/AyC_TP3-preg4_2025/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/EliteBook/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/Vitto Dell/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "c:/Users/EliteBook/Documents/PlatformIO/Projects/AyC_TP3_2025/.pio/build/esp32dev/firmware.elf",
+            "executable": "C:/Users/Vitto Dell/OneDrive/Escritorio/Proyectos/01_ISPC 2025/02_Arquitectura y Conectividad/Arquitectura-y-Conectividad/C prototipo/Actividad N°3/AyC_TP3-preg4_2025/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/EliteBook/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/Vitto Dell/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
         }

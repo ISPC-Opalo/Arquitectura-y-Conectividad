@@ -1,3 +1,3 @@
 .pio/build/esp32dev/FrameworkArduino/cbuf.cpp.o: \
- C:/Users/EliteBook/.platformio/packages/framework-arduinoespressif32/cores/esp32/cbuf.cpp \
- C:/Users/EliteBook/.platformio/packages/framework-arduinoespressif32/cores/esp32/cbuf.h
+ C:/Users/Vitto\ Dell/.platformio/packages/framework-arduinoespressif32/cores/esp32/cbuf.cpp \
+ C:/Users/Vitto\ Dell/.platformio/packages/framework-arduinoespressif32/cores/esp32/cbuf.h
