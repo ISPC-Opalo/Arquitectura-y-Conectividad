@@ -1,0 +1,52 @@
+{
+  "pizzas": [
+    {
+      "nombre": "Muzzarela",
+      "tamaños": {
+        "chica": 4,
+        "grande": 8
+      },
+      "ingredientes": {
+        "salsa": true,
+        "aceitunas": true,
+        "extras": ["mozzarella", "oregano"]
+      }
+    },
+    {
+      "nombre": "Fugazza",
+      "tamaños": {
+        "chica": 4,
+        "grande": 8
+      },
+      "ingredientes": {
+        "salsa": true,
+        "aceitunas": true,
+        "extras": ["mozzarella", "cebolla", "oregano"]
+      }
+    },
+    {
+      "nombre": "Cuatro Quesos",
+      "tamaños": {
+        "chica": 4,
+        "grande": 8
+      },
+      "ingredientes": {
+        "salsa": true,
+        "aceitunas": true,
+        "extras": ["mozzarella", "roquefort", "parmesano", "cremoso", "oregano"]
+      }
+    },
+    {
+      "nombre": "Calabresa",
+      "tamaños": {
+        "chica": 4,
+        "grande": 8
+      },
+      "ingredientes": {
+        "salsa": true,
+        "aceitunas": true,
+        "extras": ["mozzarella", "salame", "pimienta"]
+      }
+    }
+  ]
+}
