@@ -7,6 +7,9 @@
 ***Se comparte el codigo generado  en C++ para la simulación en WOKWI, se imprimen en el monitor serial el mensaje JSON y los valores medidos por los potenciometros, simulando los sensores de temperatura y humedad.***  
 
 ## AyC TP4-p4
+![Imagen](/../../E%20assets/Cuestionario%20N4/ayctp4-p4.png)
+
+![Imagen1](/../../E%20assets/Cuestionario%20N4/ayctp4-p4-1.png)
 
     #include  <Arduino.h>
     
