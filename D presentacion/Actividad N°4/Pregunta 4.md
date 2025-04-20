@@ -17,8 +17,10 @@ Este objeto servirá como contenedor para construir y organizar la estructura de
 
 **`String jsonOutput;`**  
 **`serializeJson(doc, jsonOutput);`**  
-**String jsonOutput;** Crea una variable de tipo String llamada jsonOutput que servirá para guardar el texto del JSON que se va a generar.
+**String jsonOutput;** Crea una variable de tipo String llamada jsonOutput que servirá para guardar el texto del JSON que se va a generar. 
+
 **serializeJson(doc, jsonOutput);** Convierte el contenido del objeto doc (que es un JSON en memoria) en una cadena de texto. El resultado de esa conversión se guarda dentro de la variable jsonOutput.
+
 
 ***Se comparte el codigo generado  en C++ para la simulación en WOKWI, se imprimen en el monitor serial el mensaje JSON y los valores medidos por los potenciometros, simulando los sensores de temperatura y humedad.***  
 
