@@ -4,6 +4,14 @@
 # 4) Implementar un código JSON, para comunicar un sensor de temperatura y humedad con un ESP32, simulando los mismos en WOKWI.
 # ¿Cuáles serían los campos mínimos para hacer la implementación?  
 
+**`#include <ArduinoJson.h>`**  
+Esta línea incluye la biblioteca ArduinoJson.
+ArduinoJson es una librería para trabajar con el formato JSON (JavaScript Object Notation) en placas como Arduino, ESP32, ESP8266, etc. 
+
+**`StaticJsonDocument<128> doc;`**  
+Se crea un objeto llamado doc de tipo StaticJsonDocument, el cual reserva 128 bytes de memoria estática para almacenar los datos en formato JSON. 
+Este objeto servirá como contenedor para construir y organizar la estructura del mensaje JSON.
+
 ***Se comparte el codigo generado  en C++ para la simulación en WOKWI, se imprimen en el monitor serial el mensaje JSON y los valores medidos por los potenciometros, simulando los sensores de temperatura y humedad.***  
 
 ## AyC TP4-p4
