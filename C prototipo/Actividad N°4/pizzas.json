@@ -47,6 +47,18 @@
         "aceitunas": true,
         "extras": ["mozzarella", "salame", "pimienta"]
       }
+    },
+    {
+      "nombre": "Napolitana",
+      "tamaños": {
+        "chica": 4,
+        "grande": 8
+      },
+      "ingredientes": {
+        "salsa": true,
+        "aceitunas": true,
+        "extras": ["mozzarella", "tomate en rodajas", "ajo", "oregano"]
+      }
     }
   ]
 }
