@@ -1,35 +1,107 @@
-![Carátula](../../E%20assets/caratula.png)
-
-# Formato de datos JSON (JavaScript Object Notation)
 
 
-JSON es un formato de datos ligero, basado en texto, que se utiliza para estructurar y enviar información entre sistemas es fácil de leer y escribir tanto para las personas como para máquinas.
+# 📦 ¿Qué es el formato JSON?
 
-Se organiza en pares clave-valor:  
+**JSON** (JavaScript Object Notation) es un formato ligero de intercambio de datos, basado en texto, fácil de leer y escribir tanto para humanos como para máquinas. Se originó en el lenguaje JavaScript, pero hoy es compatible con prácticamente todos los lenguajes de programación.
 
+---
+
+# 🛠️ ¿Para qué se utiliza?
+
+JSON se utiliza principalmente para estructurar y transportar datos entre diferentes sistemas. Es muy común en entornos de desarrollo web, móviles, IoT, bases de datos y APIs modernas.
+
+---
+
+# 📐 Estructura de un archivo JSON
+
+Los datos en JSON se organizan como pares clave-valor, encerrados entre llaves `{}`.  
+Cada clave (**key**) debe ser un *string* entre comillas dobles y debe tener un valor asociado:
+
+```json
 {
   "clave": "valor"
 }
+```
 
+Los valores pueden ser:
 
-## se usa en:
-- En APIs RESTful para intercambiar datos entre cliente y servidor.
-- En aplicaciones IoT, donde dispositivos envían o reciben datos en JSON.
-- En almacenamiento de datos estructurados sensillos.
+- Cadenas de texto (`"texto"`)
+- Números (`25`, `3.14`)
+- Booleanos (`true`, `false`)
+- Arreglos (listas) (`[1, 2, 3]`)
+- Objetos (diccionarios anidados)
+- `null` (para valores vacíos)
 
-## Ejemplo:
-Un sensor IoT envía sus lecturas al servidor en formato JSON:
+---
+
+# 🧠 Ejemplos de uso
+
+### ✅ En una API RESTful:
+
+El cliente realiza una solicitud al servidor para obtener información sobre un usuario.
+
+**Solicitud GET:**
+```bash
+GET /api/usuarios/1
+```
+
+**Respuesta JSON:**
+```json
 {
-  "sensor_id": "DTH11",
+  "id": 1,
+  "nombre": "Ana",
+  "email": "ana@example.com"
+}
+```
+
+---
+
+### ✅ En un dispositivo IoT:
+
+Un sensor de temperatura envía sus datos a un servidor central.
+
+```json
+{
+  "sensor_id": "DHT11",
   "temperatura": 25.6,
   "unidad": "Celsius",
-  "ubicacion": "Cosina"
+  "ubicacion": "Cocina"
 }
+```
 
+Este mensaje puede ser procesado por una plataforma que almacena, analiza y muestra los datos en tiempo real.
 
-El servidor puede procesar este mensaje para mostrar la información en un panel de control.
+---
 
-## Hay una relacion entre REST y JSON
-JSON es un formato comúnmente utilizado en comunicaciones RESTful:
-- El cliente envía una solicitud a un servidor RESTful usando un método como POST con un mensaje en JSON.
-- El servidor responde con datos estructurados en JSON que el cliente interpreta y utiliza.
+### ✅ En almacenamiento local de datos estructurados:
+
+Una aplicación puede guardar configuraciones de usuario en un archivo JSON.
+
+```json
+{
+  "tema": "oscuro",
+  "idioma": "es",
+  "notificaciones": true
+}
+```
+
+---
+
+# 🔗 Relación entre JSON y REST
+
+En arquitecturas RESTful, JSON es el formato más utilizado para el intercambio de datos.  
+La comunicación suele seguir el siguiente esquema:
+
+- **Cliente ➡️ Servidor (Request):** El cliente envía datos en formato JSON mediante métodos HTTP como `POST`, `PUT` o `PATCH`.
+- **Servidor ➡️ Cliente (Response):** El servidor responde con datos estructurados en JSON.
+
+Esto permite una interacción clara, predecible y sencilla entre sistemas, sin importar el lenguaje o plataforma que utilicen.
+
+---
+
+# 📝 Ventajas del formato JSON
+
+✅ Legible para humanos  
+✅ Ligero (menor tamaño que XML, por ejemplo)  
+✅ Compatible con la mayoría de lenguajes de programación  
+✅ Ideal para sistemas distribuidos y en tiempo real
