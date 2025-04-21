@@ -1,18 +1,19 @@
+![Carátula](../../E%20assets/caratula.png)
 
 
-# 📦 ¿Qué es el formato JSON?
+#  ¿Qué es el formato JSON?
 
 **JSON** (JavaScript Object Notation) es un formato ligero de intercambio de datos, basado en texto, fácil de leer y escribir tanto para humanos como para máquinas. Se originó en el lenguaje JavaScript, pero hoy es compatible con prácticamente todos los lenguajes de programación.
 
 ---
 
-# 🛠️ ¿Para qué se utiliza?
+#  ¿Para qué se utiliza?
 
 JSON se utiliza principalmente para estructurar y transportar datos entre diferentes sistemas. Es muy común en entornos de desarrollo web, móviles, IoT, bases de datos y APIs modernas.
 
 ---
 
-# 📐 Estructura de un archivo JSON
+#  Estructura de un archivo JSON
 
 Los datos en JSON se organizan como pares clave-valor, encerrados entre llaves `{}`.  
 Cada clave (**key**) debe ser un *string* entre comillas dobles y debe tener un valor asociado:
@@ -34,9 +35,9 @@ Los valores pueden ser:
 
 ---
 
-# 🧠 Ejemplos de uso
+#  Ejemplos de uso
 
-### ✅ En una API RESTful:
+###  En una API RESTful:
 
 El cliente realiza una solicitud al servidor para obtener información sobre un usuario.
 
@@ -56,7 +57,7 @@ GET /api/usuarios/1
 
 ---
 
-### ✅ En un dispositivo IoT:
+###  En un dispositivo IoT:
 
 Un sensor de temperatura envía sus datos a un servidor central.
 
@@ -73,7 +74,7 @@ Este mensaje puede ser procesado por una plataforma que almacena, analiza y mues
 
 ---
 
-### ✅ En almacenamiento local de datos estructurados:
+###  En almacenamiento local de datos estructurados:
 
 Una aplicación puede guardar configuraciones de usuario en un archivo JSON.
 
@@ -99,9 +100,9 @@ Esto permite una interacción clara, predecible y sencilla entre sistemas, sin i
 
 ---
 
-# 📝 Ventajas del formato JSON
+#  Ventajas del formato JSON
 
-✅ Legible para humanos  
-✅ Ligero (menor tamaño que XML, por ejemplo)  
-✅ Compatible con la mayoría de lenguajes de programación  
-✅ Ideal para sistemas distribuidos y en tiempo real
+- Legible para humanos  
+- Ligero (menor tamaño que XML, por ejemplo)  
+- Compatible con la mayoría de lenguajes de programación  
+- Ideal para sistemas distribuidos y en tiempo real
