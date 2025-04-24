@@ -1,7 +1,7 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* mqtt_server = "test.mosquitto.org";
+const char* mqtt_server = "mqtt.eclipseprojects.io";
 
 const int LED1 = 27;
 const int LED2 = 26;
