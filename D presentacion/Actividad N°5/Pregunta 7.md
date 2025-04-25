@@ -4,7 +4,7 @@
 Si imaginamos que dentro de un entorno industrial donde se requieren no solo una enorme cantidad de sensores/actuadores, sino que estos se despliegan a lo largo de grandes distancias, se desarrolo un protocolo para optimizar la comunacion de los mismos via nodos de I/O (entrada y salida de informacion) que se encuentren mas proximos a los diferentes puntos de sensorizacion. Y que luego mediant un unico cable bus (**RS-485**) conectan con el PLC. Estos nodos funcionan como **Perifericos Desentralizados (DP)** De esta forma se reduce drasticamente la cantidad de cable en el espacio fisico.
 
 <img src="../../E assets/Cuestionario N5/P7Img1.png" alt="DP"
-     width="300"
+     width="400"
      style="margin-left: 20px; margin-top: 15px;" />
 
 
@@ -13,13 +13,13 @@ Como evolucion del protoloco PROFIBUS-DP. A fin de mejor el rendimientdo y econo
 Ejemplo de un acoplador direccional
 
 <img src="../../E assets/Cuestionario N5/P7Img2.png" alt="DP"
-     width="300"
+     height="250"
      style="margin-left: 20px; margin-top: 15px;" />
 
 Ejemplo de estrcutura red del protocolo **PROFIBUS-PA**.
 
 <img src="../../E assets/Cuestionario N5/P7Img3.png" alt="DP"
-     width="300"
+     width="400"
      style="margin-left: 20px; margin-top: 15px;" />
 
 ### Arquitectura y relacioncon la capa OSI:
