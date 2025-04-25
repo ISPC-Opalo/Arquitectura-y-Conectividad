@@ -3,7 +3,7 @@
 
 # ¿Qué es el protocolo MODBUS?
 
-## **¿Qué es el protocolo Modbus RTU?**
+### **¿Qué es el protocolo Modbus RTU?**
 
 Modbus es un protocolo de comunicaciones, basado en la arquitectura maestro/esclavo o cliente/servidor, diseñado en 1979 por Modicon (ahora Schneider Electric) para su gama de controladores lógicos programables (PLCs).
 Debido a que este protocolo fue público, de fácil uso y que requiere poco desarrollo (maneja bloques de datos sin suponer restricciones) se convirtió en un protocolo de comunicaciones estándar en la industria. Es el protocolo de mayor disponibilidad para la conexión de dispositivos electrónicos industriales.  
@@ -12,7 +12,7 @@ Existen versiones del protocolo Modbus para puerto serial y Ethernet (Modbus/TCP
 
 ----------
 
-## ¿Para qué se usa?  
+### ¿Para qué se usa?  
 
 Se utiliza para conectar dispositivos electrónicos industriales y permitir la supervisión y el control remoto de procesos. MODBUS es simple, robusto y confiable, lo que lo hace ideal para aplicaciones industriales donde se requiere comunicación maestro/esclavo.
 
@@ -96,7 +96,7 @@ Imagina un maestro (PLC) queriendo leer el valor de temperatura (almacenado en e
     [Dato Bajo (19)] 
     [CRC (YY YY)]
 
-## **¿Cuáles son los beneficios de utilizar el protocolo Modbus RTU/TCP?**
+### **¿Cuáles son los beneficios de utilizar el protocolo Modbus RTU/TCP?**
 
 -   De código abierto, no se requiere pagar por licencia.
 -   Ampliamente soportado por HMIs o softwares SCADA
@@ -107,14 +107,14 @@ Imagina un maestro (PLC) queriendo leer el valor de temperatura (almacenado en e
 
 **En resumen, MODBUS facilita la comunicación entre dispositivos industriales a través de un modelo simple de consultas y respuestas, un conjunto bien definido de funciones y tablas de datos, y formatos de mensajes específicos para diferentes medios de comunicación. La clave para entender un sistema MODBUS en particular reside en conocer la dirección de cada esclavo y cómo se mapean los datos de cada dispositivo a las tablas y direcciones MODBUS que expone.**
 
-## ¿En qué lenguaje se programa?
+### ¿En qué lenguaje se programa?
 
 El protocolo MODBUS no define un lenguaje de programación específico, ya que se centra en el formato de mensajes y el protocolo de comunicación. En entornos industriales  se puede encontrar como **Ladder (Escalera)** dentro de PLCs.
 
 El lenguaje más utilizado actualmente para sistemas embebidos con MODBUS es **C/C++**, mientras que **Python** es muy popular para pruebas, herramientas de monitoreo o desarrollo rápido en PC.
 
 ----
-## Ejemplo de aplicación
+### Ejemplo de aplicación
 
 Un **PLC maestro** se comunica mediante MODBUS RTU sobre RS-485 con los siguientes dispositivos esclavos:
 
@@ -125,12 +125,14 @@ Un **PLC maestro** se comunica mediante MODBUS RTU sobre RS-485 con los siguient
 -   Una **pantalla HMI**
     
 
-El PLC solicita datos de temperatura, ajusta la velocidad del motor según estos datos y muestra la información en la HMI.
+#### El PLC solicita datos de temperatura, ajusta la velocidad del motor según estos datos y muestra la información en la HMI.
 
+![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/protocolo_MODBUS_RTO.png)  
 
-Aca va la imagen de modbus Ethetnet
+#### Tambien se puede realizar la comunicación vía ethernet:
 
-Aca va la imagen de modbus RTO
+![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/protocolo_MODBUS_Ether.png)
+
 
 
 ----------
