@@ -29,7 +29,10 @@ externos.
 realizar los servicios.
 
 ### ¿Para qué se usa? 
-CoAP es más adecuado para dispositivos que requieren el mecanismo de suspensión /
+CoAP se usa para que los dispositivos pequeños puedan comunicarse de manera eficiente en redes IoT.
+Estos dispositivos suelen tener muy poca memoria, poco poder de procesamiento y, a veces, una conexión de internet débil o de baja velocidad. Entonces, necesitan un protocolo liviano y rápido como CoAP.
+
+Ademas, CoAP es más adecuado para dispositivos que requieren el mecanismo de suspensión /
 activación en escenarios de IoT. El dispositivo puede permanecer en modo de hibernación
 durante largos períodos de tiempo, lo que ahorra energía de la batería, y una sola batería puede durar 10 años o más. Actualmente, soluciones como medidores de agua inteligentes,
 medidores de electricidad inteligente, agricultura inteligente y estacionamiento inteligente
