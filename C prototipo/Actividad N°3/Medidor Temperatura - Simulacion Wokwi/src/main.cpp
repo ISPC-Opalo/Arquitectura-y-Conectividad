@@ -3,7 +3,7 @@
 #include <PubSubClient.h>
 
 // Broker MQTT
-const char* mqtt_server = "test.mosquitto.org";
+const char* mqtt_server = "test.mosquitto.org"; //mosquitto parece estar andando mal. Si no funciona usar este: broker.hivemq.com
 
 // WiFi
 WiFiClient espClient;
@@ -39,7 +39,6 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
   Serial.println(msg);
 
-  // Interpretar comando "reset"
   if (msg == "reset") {
     Serial.println("⚠️ Instrucción de reset de temperatura recibida.");
     overrideTemp = 0;
