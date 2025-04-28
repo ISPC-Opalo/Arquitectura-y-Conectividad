@@ -66,3 +66,11 @@ La luz recibirá la solicitud y cambiará su estado a apagado.
 
 En este ejemplo, COAP se utiliza para enviar solicitudes y recibir respuestas entre tu
 teléfono móvil y las luces del sistema de iluminación inteligente.
+
+**Diagrama de sistema**
+
+
+![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/P1img1.png)
+
+
+![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/P1img2.png)
