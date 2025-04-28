@@ -72,7 +72,7 @@ teléfono móvil y las luces del sistema de iluminación inteligente.
 
 ![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/P1img1.png)
 
-![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/P1img2.png)
+<img src="/../../blob/main/E%20assets/Cuestionario%20N5/P1img2.png" alt="Imagen" style="width:500px;">
 
 SE AGREGA CUADRO COMPARATIVO DE LOS PROTOCOLOS DE COMUNICION UTILIZADOS EN LOS 
 ENTORNOS INDUSTRIALES E IOT:
@@ -88,3 +88,6 @@ ENTORNOS INDUSTRIALES E IOT:
 | **PROFINET** | Industrial                             | Maestro-Esclavo, Peer-to-Peer         | Ethernet                              | Alta                                  | Prácticamente ilimitado                 | Automatización de fábricas, control de movimiento | Compleja                            | Determinístico (con IRT)            | Amplias opciones                       | Alto rendimiento, integración IT, robusto    | Mayor complejidad, costo                   |
 | **CANopen** | Industrial                             | Maestro-Esclavo, Peer-to-Peer         | CAN Bus                               | Baja a Media                          | Hasta 127                               | Control de maquinaria, robótica         | Media                               | Determinístico (configurable)       | Depende de la implementación         | Robusto para entornos distribuidos         | Complejidad de configuración              |
 | **PROFIBUS-DP/PA** | Industrial                             | Maestro-Esclavo                       | Serial (RS-485), Bucle de corriente    | Baja a Media                          | Hasta 126 (DP)                            | Automatización de fábricas y procesos   | Media                               | Determinístico (con extensiones)      | Depende de la implementación         | Amplia base instalada, versátil          | Requiere terminación, sensibilidad al ruido (DP) |
+
+
+
