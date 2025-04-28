@@ -39,3 +39,14 @@ En una línea de ensamblaje automotriz, **PROFINET** conecta:
 - Sensores y actuadores distribuidos
 - HMIs para supervisión del proceso
 
+## Componentes de PROFINET
+PROFINET clasifica los dispositivos en tres tipos: controladores, dispositivos y supervisores.
+
+- Los **controladores** son dispositivos que ejecutan un programa de automatización e intercambian datos con los dispositivos.
+- Los **dispositivos** son sensores/actuadores conectados al controlador a través de Ethernet.
+- Los **supervisores** son un HMI, un PC u otros dispositivos de puesta en marcha, monitoreo o análisis de diagnóstico.
+
+## Diagrama Básico de PROFINET
+
+
+
