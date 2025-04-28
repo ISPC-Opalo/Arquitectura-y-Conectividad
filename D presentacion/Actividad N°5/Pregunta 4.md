@@ -14,26 +14,30 @@ todo sin interrumpir la **señal analógica**.
 
 ### ¿Cómo funciona?
 Imaginemos que tenemos un **sensor de temperatura** que está conectado a un sistema de control.
+
 - **Señal analógica**: El sensor envía una señal de 4-20 mA, que representa la temperatura medida.
+
 - **Señal digital (HART)**: Al mismo tiempo, el sensor también envía datos digitales sobre su estado, como su modelo, número de serie, posibles fallos, o incluso cambios de configuración.
+
 - **Comunicación bidireccional**: Con HART, además de **leer los valores** de la medición (como la temperatura), podés **enviar comandos** para configurar el sensor, **realizar diagnósticos** o **hacer ajustes**, todo de forma remota.
+
 La señal analógica y la digital viajan a través del mismo cable de manera **superpuesta**. Es decir, las dos señales **no se interfieren entre sí**.
 
 ### Lenguaje de programación utilizado
-El protocolo HART no depende de un lenguaje de programación específico, ya que es un estándar de comunicación industrial que define cómo se intercambian
+El protocolo HART no depende de un lenguaje de programación específico, ya que es un **estándar de comunicación industrial** que define cómo se intercambian
 datos entre dispositivos (por ejemplo, sensores y controladores). Sin embargo, cuando querés programar un sistema que se comunique mediante HART
 (como un maestro HART o un sistema SCADA), los lenguajes más usados para implementar esa comunicación son:
 
 - **C / C++:** Muy común para programar dispositivos embebidos que actúan como maestros HART o gateways. Permite control bajo nivel del hardware y del protocolo.
 - **Python:** Usado en entornos de prueba, simulación y desarrollo rápido. Existen bibliotecas y scripts que permiten comunicarse con dispositivos HART a través de puertos serie o adaptadores USB.
 - **LabVIEW:** Utilizado en automatización y control industrial. Algunas librerías permiten acceder a dispositivos HART si están conectados a través de interfaces compatibles.
-- **.NET / Java:** Usados en sistemas de gestión o aplicaciones de escritorio que comunican con dispositivos HART a través de servidores OPC o gateways.
+- **.NET / Java:** Usados en sistemas de gestión o aplicaciones de escritorio que se comunican con dispositivos HART a través de servidores OPC o gateways.
 
 ### Ejemplo
-Imaginemos que tenemos una planta de procesamiento químico con sensores de temperatura en varios puntos. Estos sensores están conectados
+Imaginemos que tenemos una **planta de procesamiento químico** con sensores de temperatura en varios puntos. Estos sensores están conectados
 a un sistema central de control que mide la temperatura para asegurar que los procesos se mantengan dentro de los parámetros correctos.
 Con la implementación de HART, los sensores siguen enviando señales análogas que indican la temperatura, pero también están enviando
-información digital adicional, como el modelo del sensor, posibles fallos o su estado a través de HART
+información digital adicional, como el modelo del sensor, posibles fallos o su estado a través de HART.
 
 ### ¿Por qué es importante?
 - **Flexibilidad**: Permite la comunicación digital sin cambiar los sistemas de control analógicos existentes, lo que lo hace muy fácil de integrar
@@ -68,42 +72,42 @@ Si bien se puede hacer lectura básica fácilmente, para configuraciones avanzad
 ### WirelessHART
 Es una extensión inalámbrica del protocolo HART, diseñada para operar en redes industriales sin cables. Fue estandarizado en 2007 bajo la norma IEC 62591.
 
-📡 **Características:**
-- Usa radiofrecuencia de 2,4 GHz (similar al Wi-Fi)
-- Tecnología de red de malla (mesh): cada dispositivo actúa como nodo repetidor
-- Comunicación segura con cifrado AES-128
+📡 **Características:**  
+- Usa radiofrecuencia de 2,4 GHz (similar al Wi-Fi)  
+- Tecnología de red de malla (mesh): cada dispositivo actúa como nodo repetidor  
+- Comunicación segura con cifrado AES-128  
 - Totalmente compatible con dispositivos HART existentes (puede integrarse a través de Gateways)
 
-🎯 **Aplicaciones típicas:**
-- Lugares donde es difícil o costoso tender cables (plantas químicas, refinerías, áreas clasificadas)
-- Monitoreo de variables ambientales: temperatura, presión, humedad
-- Instalaciones temporales o móviles
-- Sensores en movimiento o que requieren flexibilidad
+🎯 **Aplicaciones típicas:**  
+- Lugares donde es difícil o costoso tender cables (plantas químicas, refinerías, áreas clasificadas)  
+- Monitoreo de variables ambientales: temperatura, presión, humedad  
+- Instalaciones temporales o móviles  
+- Sensores en movimiento o que requieren flexibilidad  
 - Expansiones de planta sin necesidad de cableado adicional
 
-✅ **Ventajas:**
-- Reducción de costos de instalación
-- Mayor flexibilidad para reconfigurar redes
-- Mejor cobertura en áreas remotas o de difícil acceso
+✅ **Ventajas:**  
+- Reducción de costos de instalación  
+- Mayor flexibilidad para reconfigurar redes  
+- Mejor cobertura en áreas remotas o de difícil acceso  
 
 ### HART-IP  
 Es una variante que permite encapsular mensajes HART para que puedan transmitirse a través de redes Ethernet estándar (TCP/IP).
 
-🌐 **Características:**
-- Permite comunicación sobre redes Ethernet o incluso Internet
-- Mantiene compatibilidad con comandos HART tradicionales
-- Se usa para comunicarse con servidores, sistemas SCADA o software de mantenimiento
+🌐 **Características:**  
+- Permite comunicación sobre redes Ethernet o incluso Internet  
+- Mantiene compatibilidad con comandos HART tradicionales  
+- Se usa para comunicarse con servidores, sistemas SCADA o software de mantenimiento  
 
-🎯 **Aplicaciones típicas:**
-- Sistemas de supervisión centralizados en la nube o en redes LAN industriales
-- Integración de dispositivos HART en arquitecturas digitales modernas
-- Comunicación entre gateways y sistemas de control (como DCS o PLCs)
-- Gestión remota de activos (Asset Management)
+🎯 **Aplicaciones típicas:**  
+- Sistemas de supervisión centralizados en la nube o en redes LAN industriales  
+- Integración de dispositivos HART en arquitecturas digitales modernas  
+- Comunicación entre gateways y sistemas de control (como DCS o PLCs)  
+- Gestión remota de activos (Asset Management)  
 
-✅ **Ventajas:**
-- Compatible con infraestructuras Ethernet
-- Ideal para monitoreo remoto y diagnóstico avanzado
-- Se integra fácilmente con sistemas modernos basados en IP
+✅ **Ventajas:**  
+- Compatible con infraestructuras Ethernet  
+- Ideal para monitoreo remoto y diagnóstico avanzado  
+- Se integra fácilmente con sistemas modernos basados en IP  
 
 ## Diagrama de sistema
 #### <p style="text-align:center;">----------- Configuración MULTIDROP -----------</p>
