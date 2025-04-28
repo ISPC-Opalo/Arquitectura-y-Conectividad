@@ -4,6 +4,7 @@ Las modulaciones digitales constan en el procesamiento de algunos parámetros de
 
 ### Ejemplo:
 
+<img src= "![alt text](https://telecomundo.wordpress.com/wp-content/uploads/2016/10/ramas-de-modulaciones.png)" />
 
 ## Modulacion de Desplazamiento de Amplitud (ASK)
 
@@ -11,10 +12,13 @@ La modulación ASK, se basa en representar variaciones de amplitud inmersos en u
 
 ### Ejemplo de modulación de ASK:
 
+<img src= "https://telecomundo.wordpress.com/wp-content/uploads/2016/10/ejemplo-de-ask.png" />
 
 ### Esquema de modulador ASK:
 
 El circuito consta de un interruptor el cual dependiendo de la información de la señal a modular (“1” y “0”) elige la portadora correspondiente para ese valor.
+
+<img src= "https://telecomundo.wordpress.com/wp-content/uploads/2016/10/esquema-asj.png" />
 
 ## Modulacion de Desplazamiento de Frecuencia (FSK)
 
@@ -22,10 +26,13 @@ El bloque del modulador consiste básicamente en una señal binaria entrante y u
 
 ### Ejemplo de modulación FSK:
 
+<img src= "https://telecomundo.wordpress.com/wp-content/uploads/2016/10/ejemplo-de-fsk.png"/>
 
 Las portadoras poseen diferentes frecuencias como se aprecian en la siguiente figura, obteniendo como resultado la señal modulada dependiendo del tren de datos a modular.
 
 ### Esquema de modulador FSK:
+
+<img src= "https://telecomundo.wordpress.com/wp-content/uploads/2016/10/esquema-fsk.png"/>
 
 ## Modulacion de Desplazamiento de Fase (PSK)
 
@@ -33,4 +40,8 @@ Este tipo de modulación se caracteriza por variar la fase de la señal portador
 
 ### Ejemplo de modulación PSK:
 
+<img src= "https://telecomundo.wordpress.com/wp-content/uploads/2016/10/ejemplo-psk.png"/>
+
 ### Esquema de modulador PSK:
+
+<img src= "https://telecomundo.wordpress.com/wp-content/uploads/2016/10/esquema-psk.png"/>
