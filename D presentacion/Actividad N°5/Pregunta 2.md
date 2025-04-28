@@ -44,7 +44,7 @@ Supón que tienes un sistema de pedidos:
 - *Consumidores:* Servicios que procesan los pedidos desde las colas, como un módulo de impresión de etiquetas de envío.
 
 ---
-  ** Diagrama AMQP**
+  **Diagrama AMQP**
   
 ![Texto alternativo](https://github.com/ISPC-Opalo/Arquitectura-y-Conectividad/blob/83ed8168dc76233546056241e0e044ddb710662c/E%20assets/Cuestionario%20N5/P2img1.png)
 
