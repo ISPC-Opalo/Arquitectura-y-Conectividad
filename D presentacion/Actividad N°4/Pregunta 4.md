@@ -22,7 +22,8 @@ Este objeto servirá como contenedor para construir y organizar la estructura de
 **serializeJson(doc, jsonOutput);** Convierte el contenido del objeto doc (que es un JSON en memoria) en una cadena de texto. El resultado de esa conversión se guarda dentro de la variable jsonOutput.
 
 
-***Se comparte el codigo generado  en C++ para la simulación en WOKWI, se imprimen en el monitor serial el mensaje JSON y los valores medidos por los potenciometros, simulando los sensores de temperatura y humedad.***  
+***Se comparte el codigo generado  en C++ para la simulación en WOKWI, se imprimen en el monitor serial el mensaje JSON y los valores medidos por los potenciometros, simulando los sensores de temperatura y humedad.
+Se utiliza la aplicacion andriod "IOT MQTT" para recibir los datos de las mediciones.***  
 
 ## AyC TP4-p4
 
@@ -33,50 +34,101 @@ Este objeto servirá como contenedor para construir y organizar la estructura de
 ![Imagen1](/../../blob/main/E%20assets/Cuestionario%20N4/ayctp4-p4-1.png)
 
 
-    #include  <Arduino.h>
-    #include  <ArduinoJson.h>
+    #include <Arduino.h>
+    #include <WiFi.h>
+    #include <PubSubClient.h>
+    #include <ArduinoJson.h>
     
-    const  int tempPin =  34;  // Potenciómetro para temperatura
-    const  int humPin =  35;  // Potenciómetro para humedad      
+    // Pines de sensores simulados
+    const int tempPin = 34; // Potenciómetro para temperatura
+    const int humPin  = 35; // Potenciómetro para humedad
     
-    void  setup()  {
-    Serial.begin(115200);
+    // WiFi - Wokwi
+    const char* ssid = "Wokwi-GUEST";
+    const char* password = "";
+
+    // MQTT
+    WiFiClient espClient;
+    PubSubClient client(espClient);
+    const char* mqtt_server = "test.mosquitto.org";
+    const int mqtt_port = 1883;
+    const char* mqtt_client_id = "esp32_control_full";
+    const char* mqtt_topic = "/casa/sala/mediciones";
+    
+    void connectToWiFi() {
+      Serial.print("Conectando a WiFi...");
+      WiFi.begin(ssid, password);
+    
+      while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+      }
+      Serial.println(" conectado!");
     }
     
-    void  loop()  {
+    void connectToMQTT() {
+      Serial.print("Conectando a MQTT...");
+      client.setServer(mqtt_server, mqtt_port);
     
-    int tempRaw =  analogRead(tempPin);
-    int humRaw =  analogRead(humPin);
+      while (!client.connected()) {
+        if (client.connect(mqtt_client_id)) {
+          Serial.println(" conectado!");
+        } else {
+          Serial.print(" fallo, rc=");
+          Serial.print(client.state());
+          Serial.println(" intentando de nuevo en 5 segundos");
+          delay(5000);
+        }
+      }
+    }
     
-    // Convertimos a valores reales
-    float temperatura =  map(tempRaw,  0,  4095,  0,  500)  /  10.0;  // 0-50 °C
-    float humedad =  map(humRaw,  0,  4095,  0,  1000)  /  10.0;  // 0-100 %
+    void setup() {
+      Serial.begin(115200);
+      WiFi.mode(WIFI_STA);
+      connectToWiFi();
+      connectToMQTT();
+    }
+
+    void loop() {
+      if (!client.connected()) {
+        connectToMQTT();
+      }
+      client.loop();
     
-    // Crear objeto JSON
-    StaticJsonDocument<128> doc;
-    doc["Temperatura"]  = temperatura;
-    doc["Humedad"]  = humedad;
+      int tempRaw = analogRead(tempPin);
+      int humRaw  = analogRead(humPin);
     
-    // Serializar como string JSON
-    String jsonOutput;
-    serializeJson(doc, jsonOutput);
-    Serial.println("----- JSON -----");
-    Serial.println(jsonOutput);
+      float temperatura = map(tempRaw, 0, 4095, 0, 500) / 10.0; // 0-50°C
+      float humedad     = map(humRaw,  0, 4095, 0, 1000) / 10.0; // 0-100%
     
-    Serial.println();  // Línea en blanco para separación
-        
-    // Imprimir valores por separado
-    Serial.println("----- Lectura -----");
-    Serial.print("Temperatura: ");
-    Serial.print(temperatura);
-    Serial.println("° C");
+      // Crear objeto JSON
+      StaticJsonDocument<128> doc;
+      doc["Temperatura"] = temperatura;
+      doc["Humedad"] = humedad;
     
-    Serial.print("Humedad: ");
+      // Serializar JSON
+      String jsonOutput;
+      serializeJson(doc, jsonOutput);
     
-    Serial.print(humedad);
-    Serial.println("%");
+      // Mostrar en Serial
+      Serial.println("----- JSON enviado a MQTT -----");
+      Serial.println(jsonOutput);
+      Serial.println();
     
-    Serial.println();  // Línea en blanco para separación
-       
-    delay(3000);
+      // Publicar en el único topic
+      client.publish(mqtt_topic, jsonOutput.c_str());
+    
+        // Imprimir valores por separado
+      Serial.println("----- Lectura -----");
+      Serial.print("Temperatura: ");
+      Serial.print(temperatura);
+      Serial.println("° C");
+    
+      Serial.print("Humedad: ");
+      Serial.print(humedad);
+      Serial.println("%");
+    
+      Serial.println();  // Línea en blanco para separación
+    
+      delay(3000); // Publicar cada 3 segundos
     }
