@@ -1,3 +1,5 @@
+![Carátula](../../E%20assets/caratula.png)
+
 ## 5- ¿Qué es un protocolo PROFINET?, ¿Para qué se usa? Ejemplifique 
 
 **PROFINE** (Process Field Network) es un estándar abierto de comunicación industrial basado en Ethernet industrial, Este mismo se desarrollado por la organización PROFIBUS & PROFINET International (PI). este cambio representa una evolución significativa de los protocolos de campo tradicionales hacia la conectividad Ethernet moderna..
@@ -48,5 +50,5 @@ PROFINET clasifica los dispositivos en tres tipos: controladores, dispositivos y
 
 ## Diagrama Básico de PROFINET
 
-
+![Imagen](/../../blob/main/E%20assets/Cuestionario%20N5/P5img1.png)
 
