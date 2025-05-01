@@ -1,0 +1,38 @@
+## Guía para configurar **Bluetooth Electronics**
+ 
+### COnfigurar Bluetooth Electronics:
+
+- Abrí la aplicación
+- Tocá en el icono de Bluetooth (arriba a la derecha)
+- Seleccioná tu ESP32 de la lista de dispositivos emparejados
+
+### Crear el dashboard:
+
+- Andá a configuraciones y apretá en "clear all panels" y "ok"
+- En la aplicación, andá a "Editor" (icono de lápiz)
+- Añadí los elementos para visualizar los datos:
+
+    ### Para temperatura:
+
+    - Añadí un "Indicator" (medidor)  o "Graph" (gráfico)
+    - Configuralo para escuchar en "T" (temperatura) poniendo la letra en el apartado "Recieve Character"
+    - Establecé los valores mínimo y máximo (ej: 0-50 para temperatura)
+
+    ### Para humedad:
+
+    - Añadí otro "Gauge" o "Graph"
+    - Configuralo para escuchar el "H" (humedad) poniendo la letra en el apartado "Recieve Character"
+    - Establecé los valores mínimo y máximo (ej: 0-100 para humedad)
+
+
+### Guardar y usar el dashboard:
+
+- Guardá tu diseño de dashboard volviendo atrás 
+- En la pantalla principal vas a ver el diseño, dale el "Run"
+- Cuando el ESP32 envíe datos, los elementos se actualizarán automáticamente
+
+### Verificar si el programa recive datos
+
+- En "edit" elegí el apartado "Terminals"
+- Sacá un Monitor del tamaño de tu preferencia
+- Al correr el dashboard debería recibir valores
