@@ -2,14 +2,18 @@
 #include <BluetoothSerial.h>
 #include <DHT.h>
 
-// Verifica si Bluetooth está habilitado en este ESP32
+//==================================================
+// DEFINICIONES Y VARIABLES GLOBALES
+//==================================================
+
+// Verifica si Bluetooth está habilitado
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
 #error Bluetooth no está habilitado!
 #endif
 
 // Define el tipo de sensor DHT
-#define DHTPIN 4     // Pin digital conectado al sensor DHT 
-#define DHTTYPE DHT22   // DHT 22 (AM2302) - Cambia a DHT11 si se usa ese modelo
+#define DHTPIN 4     // Pin digital 
+#define DHTTYPE DHT22   //  Modelo - probamos el modelo DHT22 y DHT11
 
 // Inicializa el puerto serie Bluetooth
 BluetoothSerial SerialBT;
@@ -23,7 +27,12 @@ float humedad;
 
 // Variable para controlar el tiempo entre lecturas
 unsigned long tiempoAnterior = 0;
-const long intervalo = 5000;  // Intervalo de tiempo entre lecturas (5 segundos)
+const long intervalo = 5000;  // (5 segundos)
+
+
+//==================================================
+// SETUP DEL SISTEMA
+//==================================================
 
 void setup() {
   Serial.begin(9600);
@@ -35,6 +44,10 @@ void setup() {
   SerialBT.begin("ESP32_Sensor_TyH"); 
   Serial.println("Dispositivo Bluetooth iniciado. Ahora podes emparejarlo.");
 }
+
+//==================================================
+// LOOP DEL SISTEMA
+//==================================================
 
 void loop() {
   // Código para realizar lecturas a intervalos regulares
