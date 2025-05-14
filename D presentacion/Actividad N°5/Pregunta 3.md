@@ -62,8 +62,6 @@ ____
     -   **Longitud (Length):** Dos bytes que indican la longitud de los bytes siguientes.
     -   **Identificador de Unidad (Unit Identifier):** Un byte (similar a la dirección de esclavo en serial, útil para enrutar a través de gateways).
     -   **PDU (Código de Función + Datos):**
-
-Mas informacion click [Aqui](https://www.logicbus.com.mx/Modbus)
 ___
 
 **5. Proceso de Comunicación:**
