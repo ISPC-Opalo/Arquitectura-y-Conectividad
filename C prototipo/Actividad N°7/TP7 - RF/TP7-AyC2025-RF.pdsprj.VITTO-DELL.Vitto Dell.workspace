@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
- <FRAME activewindow="1">
+ <FRAME activewindow="0">
   <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffff2c0400001600000073070000fa030000</PLACEMENT>
   <WINDOW type="default" module="ISIS">
    <editor metric="0" gridmajor="2540000" mode="00000000" zoom="0" scale="118" flipped="0" gridminor="254000" gridmode="16" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
@@ -8,24 +8,6 @@
     <centre x="0" y="0"/>
     <origin x="0" y="0"/>
    </editor>
-  </WINDOW>
-  <WINDOW type="default" module="VSMSTUDIO">
-   <STATE NAME="EDIT" VALUE="AAAA/wAAAAH9AAAAAgAAAAAAAAEAAAAB5PwCAAAAAvsAAAAQAFAAcgBvAGoAZQBjAHQAcwEAAAAAAAAB5AAAASwA////+wAAABQAUAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAHEA////AAAAAwAAB3gAAAFr/AEAAAAB/AAAAAAAAAd4AAAAWwD////6AAAAAAEAAAAM+wAAACAATwB1AHQAcAB1AHQARABvAGMAawBXAGkAZABnAGUAdAEAAAAA/////wAAAFsA////+wAAACIAQgByAGUAYQBrAHAAbwBpAG4AdABzAFcAaQBuAGQAbwB3AAAAAAD/////AAAAWwD////7AAAAKgBkAG8AYwBrADoAMAA6AFMAaQBtAHUAbABhAHQAaQBvAG4AIABMAG8AZwAAAAAA/////wAAAAAAAAAA+wAAACYAZABvAGMAawA6ADEAOgBXAGEAdABjAGgAIABXAGkAbgBkAG8AdwAAAAAA/////wAAAAAAAAAA+wAAACoAZABvAGMAawA6ADAAOgBTAGkAbQB1AGwAYQB0AGkAbwBuACAATABvAGcAAAAAAP////8AAAAAAAAAAPsAAAAmAGQAbwBjAGsAOgAxADoAVwBhAHQAYwBoACAAVwBpAG4AZABvAHcAAAAAAP////8AAAAAAAAAAPsAAAAqAGQAbwBjAGsAOgAwADoAUwBpAG0AdQBsAGEAdABpAG8AbgAgAEwAbwBnAAAAAAD/////AAAAAAAAAAD7AAAAJgBkAG8AYwBrADoAMQA6AFcAYQB0AGMAaAAgAFcAaQBuAGQAbwB3AAAAAAD/////AAAAAAAAAAD7AAAAKgBkAG8AYwBrADoAMAA6AFMAaQBtAHUAbABhAHQAaQBvAG4AIABMAG8AZwAAAAAA/////wAAAAAAAAAA+wAAACYAZABvAGMAawA6ADEAOgBXAGEAdABjAGgAIABXAGkAbgBkAG8AdwAAAAAA/////wAAAAAAAAAA+wAAACoAZABvAGMAawA6ADAAOgBTAGkAbQB1AGwAYQB0AGkAbwBuACAATABvAGcAAAAAAP////8AAAAAAAAAAPsAAAAmAGQAbwBjAGsAOgAxADoAVwBhAHQAYwBoACAAVwBpAG4AZABvAHcAAAAAAP////8AAAAAAAAAAAAABnMAAAHkAAAAAQAAAAIAAAAIAAAAAvwAAAAA"/>
-   <PROJECT NAME="ARDUINO_UNO_1" CONFIGURATION="Debug">
-    <PROGRAMMER NAME="AVRDUDE" INTERFACE="Arduino (ATmega328)">
-     <PROPERTY NAME="PORT" VALUE=""/>
-     <PROPERTY NAME="PORTCLOCK" VALUE="115200"/>
-     <PROPERTY NAME="UPLOADER" VALUE="ArduinoUnoR3.hex"/>
-    </PROGRAMMER>
-   </PROJECT>
-   <PROJECT ACTIVE="TRUE" NAME="ARDUINO_UNO_2" CONFIGURATION="Debug">
-    <PROGRAMMER NAME="AVRDUDE" INTERFACE="Arduino (ATmega328)">
-     <PROPERTY NAME="PORT" VALUE=""/>
-     <PROPERTY NAME="PORTCLOCK" VALUE="115200"/>
-     <PROPERTY NAME="UPLOADER" VALUE="ArduinoUnoR3.hex"/>
-    </PROGRAMMER>
-   </PROJECT>
-   <EDITOR/>
   </WINDOW>
  </FRAME>
  <MODULE name="ARES">
@@ -46,9 +28,10 @@
   <PWI>
    <POPUP w="800" x="48" flags="00000002" y="160" h="200" pid="0" iid="-1">
     <PROPERTIES>
-     <ITEM name="Message Column Width">-22</ITEM>
+     <ITEM name="Message Column Width">-142</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
      <ITEM name="Source Column Width">100</ITEM>
+     <ITEM name="Time Column Width">120</ITEM>
      <ITEM name="Version">100</ITEM>
     </PROPERTIES>
    </POPUP>
@@ -71,13 +54,13 @@
      <ITEM name="nItems">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="450" x="88" flags="00000023" y="200" h="250" pid="0" iid="7">
+   <POPUP w="450" x="95" flags="00008023" y="280" h="250" pid="0" iid="7">
     <PROPERTIES>
      <ITEM name="AutoEcho">0</ITEM>
      <ITEM name="HexMode">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="450" x="108" flags="00000023" y="220" h="250" pid="0" iid="8">
+   <POPUP w="450" x="98" flags="00000023" y="539" h="250" pid="0" iid="8">
     <PROPERTIES>
      <ITEM name="AutoEcho">0</ITEM>
      <ITEM name="HexMode">0</ITEM>
@@ -116,7 +99,7 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="16" x="208" flags="80000000" y="320" h="32" pid="14" iid="1">
+   <POPUP w="16" x="208" flags="00000000" y="320" h="32" pid="14" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -179,7 +162,7 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="16" x="348" flags="80000000" y="460" h="32" pid="14" iid="2">
+   <POPUP w="16" x="348" flags="00000000" y="460" h="32" pid="14" iid="2">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
